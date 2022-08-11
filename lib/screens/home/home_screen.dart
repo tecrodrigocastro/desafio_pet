@@ -25,7 +25,7 @@ class _HomePageState extends State<HomePage> {
 
     return Scaffold(
       appBar: customAppBar(),
-      backgroundColor: Colors.grey.shade50,
+      backgroundColor: Colors.grey.shade200,
       body: SafeArea(
         child: SizedBox(
           height: sizeHeigth,
@@ -205,9 +205,19 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
                               const Spacer(),
-                              const Icon(
-                                Icons.favorite,
-                                color: Colors.red,
+                              InkWell(
+                                onTap: () {
+                                  setState(() {
+                                    dogs[index].favorite =
+                                        !dogs[index].favorite;
+                                  });
+                                },
+                                child: Icon(
+                                  dog.favorite
+                                      ? Icons.favorite
+                                      : Icons.favorite_outline,
+                                  color: Colors.red,
+                                ),
                               ),
                             ],
                           ),

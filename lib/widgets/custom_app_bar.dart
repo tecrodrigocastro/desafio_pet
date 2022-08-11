@@ -17,7 +17,7 @@ PreferredSizeWidget customAppBar() {
         ),
         children: [
           TextSpan(
-            text: '\nCameron St, Boston',
+            text: '\n Pécem, Ceará',
             style: TextStyle(
               color: Colors.black,
               fontSize: 17,

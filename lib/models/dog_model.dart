@@ -9,6 +9,7 @@ class Dog {
   final String sexo;
   final String about;
   final Color color;
+  bool favorite = false;
   Dog({
     required this.color,
     required this.name,
@@ -18,6 +19,7 @@ class Dog {
     required this.photos,
     required this.sexo,
     required this.about,
+    required this.favorite,
   });
   static Dog fromJson(json) => Dog(
         name: json['name'],
@@ -28,5 +30,6 @@ class Dog {
         sexo: json['sexo'],
         about: json['about'],
         color: json['color'],
+        favorite: json['favorite'],
       );
 }

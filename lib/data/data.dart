@@ -18,7 +18,8 @@ List<Dog> getDogs() {
       "sexo": "Female",
       "about":
           "O golden retriever é uma raça canina do tipo retriever originária da Grã-bretanha, e foi desenvolvida para a caça de aves aquáticas",
-      "color": Colors.yellow
+      "color": Colors.yellow,
+      "favorite": true,
     },
     {
       "name": "Charlie",
@@ -27,7 +28,6 @@ List<Dog> getDogs() {
       "distance": "2.6 kms away",
       "photos": [
         "https://www.dogbible.com/app/images/boston-terrier-breed-description-dc350a.png",
-        "https://image.cachorrogato.com.br/imagens/topos/topo_26_1374220023.png",
         "https://www.worldlydogs.com/uploads/5/2/2/3/52234445/8186037_orig.png",
         "https://cf-s3.petcoach.co/uploads/breed/75/1520449701-Boston3.png",
         "https://res.imgkits.com/segment_regular_F1ddJPNS2ac.png?imageMogr2/format/webp|imageView2/2/w/900",
@@ -35,7 +35,8 @@ List<Dog> getDogs() {
       "sexo": "Male",
       "about":
           "Boston terrier é uma raça canina oriunda da cidade de Boston, nos Estados Unidos. Originalmente eram utilizados como cães de combate e cães de caça a ratos, inclusive no Rat-baiting.",
-      "color": Colors.cyanAccent
+      "color": Colors.cyanAccent,
+      "favorite": false,
     },
     {
       "name": "Max",
@@ -52,7 +53,8 @@ List<Dog> getDogs() {
       "sexo": "Male",
       "about":
           "O husky siberiano é uma raça de cães de trabalho e companhia, do tipo Spitz, oriunda da Sibéria na Rússia. Sua função específica é tracionar trenós.",
-      "color": Colors.blue
+      "color": Colors.blue,
+      "favorite": false,
     },
     {
       "name": "Daisy",
@@ -69,7 +71,8 @@ List<Dog> getDogs() {
       "sexo": "Female",
       "about":
           "Maltês também chamado de bichon maltês, é uma raça de cães de companhia de pequeno porte oriunda da região central do Mar Mediterrâneo, geralmente associada pelo nome a ilha de Malta. Porém, o país patrono da raça é a Itália",
-      "color": Colors.orangeAccent
+      "color": Colors.orangeAccent,
+      "favorite": false,
     },
     {
       "name": "Sparky",
@@ -86,7 +89,8 @@ List<Dog> getDogs() {
       "sexo": "Female",
       "about":
           "O golden retriever é uma raça canina do tipo retriever originária da Grã-bretanha, e foi desenvolvida para a caça de aves aquáticas",
-      "color": Colors.yellow
+      "color": Colors.yellow,
+      "favorite": false,
     },
     {
       "name": "Charlie",
@@ -95,7 +99,6 @@ List<Dog> getDogs() {
       "distance": "2.6 kms away",
       "photos": [
         "https://www.dogbible.com/app/images/boston-terrier-breed-description-dc350a.png",
-        "https://image.cachorrogato.com.br/imagens/topos/topo_26_1374220023.png",
         "https://www.worldlydogs.com/uploads/5/2/2/3/52234445/8186037_orig.png",
         "https://cf-s3.petcoach.co/uploads/breed/75/1520449701-Boston3.png",
         "https://res.imgkits.com/segment_regular_F1ddJPNS2ac.png?imageMogr2/format/webp|imageView2/2/w/900",
@@ -103,7 +106,8 @@ List<Dog> getDogs() {
       "sexo": "Male",
       "about":
           "Boston terrier é uma raça canina oriunda da cidade de Boston, nos Estados Unidos. Originalmente eram utilizados como cães de combate e cães de caça a ratos, inclusive no Rat-baiting.",
-      "color": Colors.cyanAccent
+      "color": Colors.cyanAccent,
+      "favorite": false,
     },
   ];
   return data.map<Dog>(Dog.fromJson).toList();
