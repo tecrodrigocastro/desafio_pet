@@ -12,6 +12,8 @@ class DetailsPage extends StatefulWidget {
 class _DetailsPageState extends State<DetailsPage> {
   @override
   Widget build(BuildContext context) {
+    double sizeWidth = MediaQuery.of(context).size.width;
+    double sizeHeigth = MediaQuery.of(context).size.height;
     Dog dog = ModalRoute.of(context)!.settings.arguments as Dog;
     return Scaffold(
       appBar: AppBar(
@@ -36,6 +38,10 @@ class _DetailsPageState extends State<DetailsPage> {
             ),
           ),
         ],
+      ),
+      body: SizedBox(
+        height: sizeHeigth,
+        width: sizeWidth,
       ),
     );
   }
