@@ -47,9 +47,16 @@ class _DetailsPageState extends State<DetailsPage> {
                       ),
                     ],
                   ),
-                  child: Icon(
-                    dog.favorite ? Icons.favorite : Icons.favorite_outline,
-                    color: Colors.red,
+                  child: InkWell(
+                    onTap: () {
+                      setState(() {
+                        dog.favorite = !dog.favorite;
+                      });
+                    },
+                    child: Icon(
+                      dog.favorite ? Icons.favorite : Icons.favorite_outline,
+                      color: Colors.red,
+                    ),
                   ),
                 ),
               ],
