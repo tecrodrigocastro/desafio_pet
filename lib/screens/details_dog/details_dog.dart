@@ -31,16 +31,28 @@ class _DetailsPageState extends State<DetailsPage> {
           ),
         ),
         actions: [
-          IconButton(
-            onPressed: () {
-              setState(() {
-                dog.favorite = !dog.favorite;
-              });
-            },
-            icon: Icon(
-              dog.favorite ? Icons.favorite : Icons.favorite_outline,
-              color: Colors.red,
-              size: 30,
+          Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Stack(
+              children: [
+                Container(
+                  height: 30,
+                  width: 30,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(5),
+                    boxShadow: [
+                      BoxShadow(
+                        blurRadius: 2,
+                        color: Colors.red.shade100,
+                      ),
+                    ],
+                  ),
+                  child: Icon(
+                    dog.favorite ? Icons.favorite : Icons.favorite_outline,
+                    color: Colors.red,
+                  ),
+                ),
+              ],
             ),
           ),
         ],
