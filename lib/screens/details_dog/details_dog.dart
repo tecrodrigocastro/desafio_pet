@@ -200,6 +200,8 @@ class _DetailsPageState extends State<DetailsPage> {
                     style: TextStyle(
                       color: Colors.grey.shade600,
                     ),
+                    maxLines: 3,
+                    overflow: TextOverflow.ellipsis,
                   ),
                 ],
               ),
